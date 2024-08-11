@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    string v;
+   
+    cout << "This programm makes random answers press a" << endl;
+    srand(time(0));
+    int a =1+ rand() % 101;
+    cin >> v;
+    if (v == "a") {
+
+
+        if (a < 25) {
+            cout << "Yes";
+        }
+        if ((a > 25) && (a < 50)) {
+            cout << "No";    
+        }
+        if ((a > 50) && (a < 75)) {
+            cout << "Maybe yes";
+        }
+        if ((a > 75) && (a < 101)) {
+            cout << "Maybe no";
+            
+        }
+    }
+}
